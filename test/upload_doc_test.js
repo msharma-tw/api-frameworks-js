@@ -20,7 +20,7 @@ describe("POST /document/upload", function() {
             .post('http://localhost:3003/document/upload', undefined, config)
             .then(function(response){
     			console.log(response.body);
-    			expect(response).to.have.status(200);
+    			expect(response).to.have.status(201);
     		});
     });
 });
